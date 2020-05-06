@@ -4,6 +4,7 @@ script:
 - docker run --privileged hello-world
 - echo "FOO" > FOO
 deploy:
+  skip_cleanup: true
   token:
     secure: lNO+GF2dEAsErq1KHy1NHVnrKgkpPSOu2DION5AGKn9hY8toaIjh95diKvk741IAF36v2NuRVp7J+MEAfPbCL6aQljGYWXTKTpiUhSD/FiRi/ty/7aCQvYeDBXpbF0tI82EJUSu8AOKxV+zkXo6m45EPSiremZbqqfPUoEtheDLzo5JBYp6+0wLIICZwnijfyVFn1xsQlMrk6SB1xvL7TjtiJZgfPjUOyUreGMAaqfr+TTy/mHQtmlE4NWEQdDh0wdDgQFyeNf7U119vdQ+/YX9DdpK9djnrRBjuUk18hMsiuCTvjRfzAoZvGHG3NGpyijnRviVdcYq5loJnk2TtjYI7co4jCzIo/xUALsxT+iol5X2C41vCLKQS+HXpcAwOuKnZhcToqpPw3YKQT/zDHnLG6LeZbYDIEiI26tLuUuKP2v7UG1M5hjgPgZu1lxTzrE4MfkrU3vAM1DBTimeR/pgboPDU96Iwpzyao4SK08skvowxV98ab+Qro3N+JpNh3Yqe8U3/psVWoVOmhuG01qexVMxboFuUh9XGDNNNTVw5zXsyejClqGQZJetVCEnAf72mY/bqUC1G3NFiI5kt/g7gjET5PwAIXW91JdPAmxv7Wxoa7N3Tg7NA2ORaUW3XbTOJwvWPeyOFqQUrdUmgr8mA0mca7COqP2tbgp/0DmA=
   provider: releases
